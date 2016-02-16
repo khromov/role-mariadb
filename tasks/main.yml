@@ -5,7 +5,7 @@
 
 - name: Add MariaDB-Repository
   sudo: yes
-  apt_repository: repo='deb http://mirror3.layerjet.com/mariadb/repo/10.1/ubuntu {{ ansible_distribution_release }} main' state=present
+  apt_repository: repo='deb http://ftp.ddg.lth.se/mariadb/repo/10.1/ubuntu {{ ansible_distribution_release }} main' state=present
 
 - name: Add Key for MariaDB Repository
   sudo: yes
